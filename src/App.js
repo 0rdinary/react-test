@@ -10,26 +10,26 @@ import './App.css';
 function App() {
 	const [closets, setClosets] = useState(null);
 
-	useEffect(() => {
-		console.log('effect!')
+	// useEffect(() => {
+	// 	console.log('effect!')
 
-		let request = webOS.service.request("luna://com.webos.service.db/", {
-			method:"find",
-			parameters: {
-				query: {
-					"from": "com.petshion.closet:1"
-				}
-			},
-			onSuccess: function(inResponse) {
-				console.log('success');
-				console.log(inResponse);
-			},
-			onFailure: function(inError) {
-				console.log('Error');
-				console.log(inError);
-			}
-		});
-	}, [])
+	// 	let request = webOS.service.request("luna://com.webos.service.db/", {
+	// 		method:"find",
+	// 		parameters: {
+	// 			query: {
+	// 				"from": "com.petshion.closet:1"
+	// 			}
+	// 		},
+	// 		onSuccess: function(inResponse) {
+	// 			console.log('success');
+	// 			console.log(inResponse);
+	// 		},
+	// 		onFailure: function(inError) {
+	// 			console.log('Error');
+	// 			console.log(inError);
+	// 		}
+	// 	});
+	// }, [])
 
 	return (
 		<>

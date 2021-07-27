@@ -1,3 +1,4 @@
+import React from 'react';
 import Button from './SideBarButton.js';
 
 function LogoButton() {

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve  --progress --mode development",
-    "build": "webpack --progress --mode production serve"
+    "dev": "webpack serve --progress --mode development",
+    "build": "webpack --progress --mode production"
   },
   "keywords": [],
   "author": "",

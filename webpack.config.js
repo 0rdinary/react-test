@@ -7,8 +7,8 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.join(__dirname, '/dist'),
-		filename: 'index_bundle.js',
-		publicPath: './dist'
+		filename: 'index_bundle.js'
+		//publicPath: './dist'
 	},
 	module: {
 		rules: [
@@ -20,7 +20,8 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(c|sc|sa)ss$/,
+				// test: /\.(c|sc|sa)ss$/,
+				test: /\.css$/,
 				use: [
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
@@ -44,6 +45,8 @@ module.exports = {
 	],
 	devtool: 'eval-cheap-source-map',
 	devServer: {
+		publicPath: "/",
+		contentBase: path.join(__dirname, 'public'),
 		hot: true,
 		overlay: true,
 		writeToDisk: true,
