@@ -1,0 +1,16 @@
+.sidebar-wrapper {
+    width: 15vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../../public/sidebar/sidebar_background.png');
+}
+
+.sidebar {
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+hr {
+    width: 90%;
+    opacity: 0.5;
+}
